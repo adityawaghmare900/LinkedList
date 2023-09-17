@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace RemoveFirstNode_UC5
+namespace DeleteLastElement
 {
     internal class Node
     {
