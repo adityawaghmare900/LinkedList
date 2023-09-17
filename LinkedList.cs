@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DeleteLastElement
+namespace NodeSearch
 {
     internal class LinkedList
     {
@@ -31,38 +31,33 @@ namespace DeleteLastElement
 
         public void Display()
         {
-            Node temp = this.head;
+            Node temp = head;
             if (temp == null)
             {
                 Console.WriteLine("LinkedList is empty");
                 return;
             }
-            while (temp != null)
+            else
             {
-                Console.WriteLine(temp.data + " ");
-                temp = temp.next;
+                while (temp != null)
+                {
+                    Console.WriteLine(temp.data + " ");
+                    temp = temp.next;
+                }
             }
         }
 
-        public Node RemoveLastNode()
+        public Node Search(int value)
         {
-            if (this.head == null)
+            while(this.head != null)
             {
-                return null;
+                if (this.head.data == value)
+                {
+                    return this.head;
+                }
+                this.head=this.head.next;
             }
-            if (head.next == null)
-            {
-                return null;
-            }
-            Node newNode = head;
-            while(newNode.next.next != null)
-            {
-                newNode = newNode.next;
-            }
-            newNode.next = null;
-            Console.WriteLine("Last Element Deleted Successfully");
-            return head;
-            
+            return null;
         }
     }
 }

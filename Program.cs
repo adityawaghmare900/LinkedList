@@ -1,4 +1,4 @@
-﻿namespace DeleteLastElement
+﻿namespace NodeSearch
 {
     internal class Program
     {
@@ -11,11 +11,7 @@
             list.Display();
             Console.WriteLine();
             Console.WriteLine("=========================================");
-            list.RemoveLastNode();
-            Console.WriteLine();
-            Console.WriteLine("=========================================");
-            Console.WriteLine("After removing First element");
-            list.Display();
+            Console.WriteLine(list.Search(70));
         }
     }
 }
