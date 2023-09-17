@@ -1,14 +1,17 @@
-﻿namespace SimpleLinkedlist_UC1
+﻿using System.Collections.Generic;
+
+namespace LinkedListWithNode_UC2
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-            LinkedList list=new LinkedList();
-            list.Add(56);
-            list.Add(30);
-            list.Add(70);
-          
+
+            LinkedList list = new LinkedList();
+            list.AddNode(70);
+            list.AddNode(30);
+            list.AddNode(56);
+
             list.Display();
         }
     }
