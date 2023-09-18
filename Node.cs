@@ -4,17 +4,17 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace NodeSearch
+namespace InsertAtOnePosition_UC4
 {
-    internal class Node
+    public class Node
     {
         public int data;
         public Node next;
 
-        public Node(int data)
+        public Node(int data) 
         {
             this.data = data;
-            next = null;
+           // next = null;
         }
     }
 }
